@@ -42,7 +42,6 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.21",
-    "react-multi-carousel": "^2.5.5",
-    "react-responsive-carousel": "^3.2.7"
+    "react-multi-carousel": "^2.5.5"
   }
 }
