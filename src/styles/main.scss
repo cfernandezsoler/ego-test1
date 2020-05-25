@@ -1,0 +1,127 @@
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("./libraries/Montserrat-Regular.ttf");
+}
+
+* {
+  font-family: Montserrat-Regular;
+}
+
+.btn-showmodel {
+  width: 152px;
+  height: 34px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+.btn-filter {
+  border-radius: 18px;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.08px;
+  text-align: center;
+  color: #373737;
+}
+
+.filter-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.08px;
+  color: #373737;
+  position: relative;
+  right: 15px;
+}
+
+.main-title {
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: -1px;
+  color: #373737;
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+  }
+}
+
+.model {
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: -0.65px;
+    text-align: center;
+    color: #000000;
+  }
+  p {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    text-align: center;
+    color: #191919;
+  }
+}
+
+.sort-button {
+  border: none;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.08px;
+  text-align: right;
+  color: #373737;
+  word-wrap: none;
+
+  .sort-right {
+    right: 0;
+  }
+  .sort-left {
+    left: 0;
+  }
+  .sort-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    animation: 0.5s fade-in;
+    overflow: hidden;
+    z-index: 1001;
+    box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.15);
+    @media screen and (max-width: 400px) {
+      width: 140px;
+    }
+
+    button {
+      border: none;
+      background-color: white;
+      width: 158px;
+      height: 37px;
+      text-align: left;
+      padding-left: 10px;
+      &:hover {
+        background-color: rgba(209, 214, 214, 0.2);
+      }
+      p {
+        font-size: 10px;
+        line-height: 3.5;
+        letter-spacing: -0.1px;
+        color: #191919;
+      }
+    }
+    .sort-selected {
+      background-color: rgba(132, 134, 134, 0.2);
+    }
+  }
+}

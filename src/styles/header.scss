@@ -1,0 +1,80 @@
+.custom-header {
+  height: 70px;
+  .tabs {
+    top: 16px;
+    left: -27px;
+    button,
+    p {
+      border: none;
+      font-weight: bold;
+      padding-bottom: 15px;
+      transition: 0.5s box-shadow;
+    }
+    .tab-selected {
+      box-shadow: 0 5px 0 0px red;
+    }
+  }
+
+  .menu-open {
+    border: none;
+    background-color: white;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 390px;
+    right: 0px;
+    animation: 0.5s fade-in;
+    overflow-y: hidden;
+    z-index: 1001;
+    @media screen and (max-width: 400px) {
+      width: 320px;
+    }
+
+    .menu-list {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      font-family: Montserrat;
+      letter-spacing: -0.1px;
+      .menu-close {
+        display: inline-block;
+        border: none;
+        background-color: white;
+        text-align: right;
+        padding: 20px 27px 0 0;
+        p {
+          font-size: 14px;
+          color: #000000;
+        }
+      }
+      a,
+      p {
+        font-size: 20px;
+      }
+      a {
+        margin-left: 10px;
+        color: black;
+      }
+
+      .rectangle-1,
+      .rectangle-2 {
+        padding: 20px 54px 20px 0px;
+      }
+      .rectangle-2 {
+        background-color: #efeeef;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
